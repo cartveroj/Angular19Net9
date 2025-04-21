@@ -1,0 +1,46 @@
+<p>{{title}}</p>
+
+<app-listado-peliculas></app-listado-peliculas>
+
+<!-- <div *ngFor="let pelicula of peliculas; let indice = index"> modo antiguo
+  <p>Orden: {{indice}}</p>
+  <p>Pelicula: {{pelicula.titulo}}</p>
+  <p>Fecha lanzamiento: {{pelicula.fecha | date:"dd-MMMM-yyyy" }}  </p>
+  <p>Director: {{pelicula.director}}  </p>
+  <p>Calificación : {{pelicula.calificacion}}</p>
+</div> -->
+
+  <!-- VERSION ANTIGUA
+<div *ngIf="!peliculas">
+  <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" />
+
+</div>
+<div *ngIf="peliculas?.length === 0">
+  <p>No hay peliculas en este momento</p>
+</div>
+<div *ngIf="peliculas && peliculas.length > 0">
+  @for (pelicula of peliculas; track $index) {
+    <p>Orden: {{$index}}</p>
+    <div class="contenedor-peliculas">
+    <div style="display: flex; flex-direction: row; gap: 10px">
+      <div>
+        <img [ngSrc]="pelicula.imagen" [priority]="$index == 0" width="169" height="250">
+        contiene el decorador ngSrc que permite optimizar las imagenes en el
+        momento de carga 
+        [priority]="$index == 0" permite que solo la primera img tenga este decorador  
+      -->
+      <!-- </div>
+      <div>
+        <p>Pelicula: {{pelicula.titulo}}</p>
+        <p>Fecha lanzamiento: {{pelicula.fecha | date:"dd-MMMM-yyyy" }}  </p>
+        <p>Director: {{pelicula.director}}  </p>
+        <p>Calificación : {{pelicula.calificacion}}</p>
+      </div>
+    </div>
+    </div>
+  }
+</div> -->
+
+
+
+
